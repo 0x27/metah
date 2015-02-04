@@ -1,0 +1,14 @@
+Marko:
+- grafovi i tablice u prezentaciji (dodat zakljucak?)
+- pregledat jos jednom kod
+- napravit jos jedan server (to ce bit par dana prije prezentacije) i sve dignut na njega, istestirat da li sve radi
+- provjerit imam li sve rezultate testiranja i ponovo testirat ako sta treba
+
+Vanja:
+- spojit stranicu i kod
+- istestirat grafove
+- napisat dio prezentacije o grafickom sucelju
+
+
+Za dogovorit se:
+- ocemo li na novo crtat slike?
