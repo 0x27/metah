@@ -1,8 +1,7 @@
 Marko:
-- grafovi i tablice u prezentaciji (dodat zakljucak?)
-- pregledat jos jednom kod
+- grafovi i tablice (jedna tablica gotova, najvj i jedina) u prezentaciji (dodat zakljucak?)
 - napravit jos jedan server (to ce bit par dana prije prezentacije) i sve dignut na njega, istestirat da li sve radi
-- provjerit imam li sve rezultate testiranja i ponovo testirat ako sta treba
+- provjerit imam li sve rezultate testiranja i ponovo testirat ako sta treba (preko vikenda obavim jos jedno testiranje di mi fale rezultati)
 
 Vanja:
 - spojit stranicu i kod
