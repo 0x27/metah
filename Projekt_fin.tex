@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{color}
+\usepackage{multirow}
 
 %\setbeamercovered{transparent}
 \setbeamertemplate{blocks}[rounded][shadow=true]
@@ -295,7 +296,14 @@
 }
 
 \frame{
-  \frametitle{Primjeri testnih funkcija - Sphera (De Jong 1)}
+ \frametitle{Parametri pri testiranju }
+ \begin{itemize}
+  \item 
+ \end{itemize}
+}
+
+\frame{
+  \frametitle{Primjeri testnih funkcija - Sfera (De Jong 1)}
   \begin{itemize}
    \item $f(x_i)=\sum_{i=1}^{3}x_i^2, x_i \in [-5.12,5.12], i =1,2,3$
   \end{itemize}
@@ -327,28 +335,45 @@
 }
 
 \section{Rezultati testiranja}
-\frame{
-  \frametitle{Tabli\v cni prikaz broja iteracija - 1}
-  \begin{tabular}{c|c|c|c|c|c}
-        & De Jong 1 & De Jong 2 & De Jong 3 & De Jong 4 & De Jong 5\\ \hline
-   ABC  &  &   &   &   &   \\ \hline
-   PSO  &  &   &   &   &   \\ \hline
-   OPSO &  &   &   &   &   
-  
-  \end{tabular}
-  
-}
+%\frame{
+%  \frametitle{Tabli\v cni prikaz broja iteracija - 1}
+%  \begin{tabular}{c|c|c|c|c|c}
+%        & De Jong 1 & De Jong 2 & De Jong 3 & De Jong 4 & De Jong 5\\ \hline
+%   ABC  &  &   &   &   &   \\ \hline
+%   PSO  &  &   &   &   &   \\ \hline
+%   OPSO &  &   &   &   &   
+%  \end{tabular}
+%}
+
+%\frame{
+%  \frametitle{Tabli\v cni prikaz broja iteracija - 2}
+%  \begin{tabular}{c|c|c|c|c|c}
+%        & Schaffer F6 & Rastrigin & Griewank & Hyper-Ellipsoid & Ackley\\ \hline
+%   ABC  &   &   &   &   &   \\ \hline
+%   PSO  &   &   &   &   &   \\ \hline
+%   OPSO &   &   &   &   &   
+%  \end{tabular}
+%}
 
 \frame{
-  \frametitle{Tabli\v cni prikaz broja iteracija - 2}
-  \begin{tabular}{c|c|c|c|c|c}
-        & Schaffer F6 & Rastrigin & Griewank & Hyper-Ellipsoid & Ackley\\ \hline
-   ABC  &   &   &   &   &   \\ \hline
-   PSO  &   &   &   &   &   \\ \hline
-   OPSO &   &   &   &   &   
-  
+  \frametitle{Tabli\v cni prikaz broja iteracija - izbor}
+  \begin{center}
+  \begin{tabular}{c|c|c|c|c}
+        & Sfera & Step & Schaffer F6 &  Ackley\\ \hline
+   \multirow{4}{*}{ABC} & 38.03 & 475.53 & 2 & N/A\\  
+   	& 224.60 & 355.93 & 1.93 & N/A\\
+   	& 447.23 & 273.33 & 2.70 & N/A\\
+   	& 630 & 323.20 & 2.57 & N/A\\ \hline
+   \multirow{4}{*}{PSO} & 50.73 & 350.33 & 234.30 & 10 000 \\ 
+    & 51.67 & 15.80 & 130.03 & 10 000 \\
+    & 52 & 16.63 & 135.07 & 10 000 \\
+    & 53.5 & 14.10 & 118.30 & 10 000 \\\hline
+  \multirow{4}{*}{OPSO} & 28.63 & 6.27 & 76.83 & 8678.27\\
+    & 25.73 & 4.83 & 51.97 & 4378.37\\
+    & 23.67 & 4.87 & 36.13 & 2714.97\\
+    & 25.73 & 4.87 & 38.4 & 1393.00 \\
   \end{tabular}
-  
+  \end{center}
 }
 
 \frame{
