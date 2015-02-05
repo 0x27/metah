@@ -1,9 +1,0 @@
-\beamer@endinputifotherversion {3.24pt}
-\select@language {croatian}
-\beamer@sectionintoc {1}{Osnovni pojmovi i problematika}{3}{0}{1}
-\beamer@sectionintoc {2}{U znanstvenoj i stru\v cnoj literaturi}{6}{0}{2}
-\beamer@sectionintoc {3}{O projektnom zadatku}{11}{0}{3}
-\beamer@sectionintoc {4}{Algoritmi}{12}{0}{4}
-\beamer@sectionintoc {5}{Testiranje i primjeri testnih funkcija}{18}{0}{5}
-\beamer@sectionintoc {6}{Rezultati testiranja}{23}{0}{6}
-\beamer@sectionintoc {7}{Grafi\v cko su\v celje}{24}{0}{7}
