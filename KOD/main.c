@@ -117,6 +117,48 @@ void set_function(int funkcija, int* dim, double* f_best, double* border_l, doub
 			*border_h = quartic_set(3);
 			*greska = quartic_set(4);
 			break;
+		case 5 :
+			*dim = shekel_set(0);
+			*f_best = shekel_set(1);
+			*border_l = shekel_set(2);
+			*border_h = shekel_set(3);
+			*greska = shekel_set(4);
+			break;
+		case 6 :
+			*dim = schaffer_set(0);
+			*f_best = schaffer_set(1);
+			*border_l = schaffer_set(2);
+			*border_h = schaffer_set(3);
+			*greska = schaffer_set(4);
+			break;
+		case 7 :
+			*dim = rastrigin_set(0);
+			*f_best = rastrigin_set(1);
+			*border_l = rastrigin_set(2);
+			*border_h = rastrigin_set(3);
+			*greska = rastrigin_set(4);
+			break;
+		case 8 :
+			*dim = griewank_set(0);
+			*f_best = griewank_set(1);
+			*border_l = griewank_set(2);
+			*border_h = griewank_set(3);
+			*greska = griewank_set(4);
+			break;
+		case 9 :
+			*dim = hypell_set(0);
+			*f_best = hypell_set(1);
+			*border_l = hypell_set(2);
+			*border_h = hypell_set(3);
+			*greska = hypell_set(4);
+			break;
+		case 10 :
+			*dim = ackley_set(0);
+			*f_best = ackley_set(1);
+			*border_l = ackley_set(2);
+			*border_h = ackley_set(3);
+			*greska = ackley_set(4);
+			break;
 		default:
 			printf("ERROR function set main!\n");
 	}
