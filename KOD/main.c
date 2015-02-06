@@ -47,29 +47,29 @@ int main(int argc, char* argv[])
 	{
 		tren_iter_pso = tren_iter_abc = tren_iter_opso = 0;
 		
-		printf("%d\n", i);
+		//printf("%d\n", i);
 		
 		start_time = time(NULL);
 		start = clock();
 		PSO(funkcija, br_iter, n, dim, f_best, greska, border_l, border_h, &tren_iter_pso, &g_best_pso, omega, ro_p, ro_g);
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-		printf("PSO: %12.10f\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
-		//fprintf(pso, "%lf\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
+		//printf("PSO: %12.10f\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
+		fprintf(pso, "%lf\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
 		
 		start = clock();
 		ABC(funkcija, br_iter, n, dim, f_best, greska, border_l, border_h, &tren_iter_abc, &g_best_abc, m, e);
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-		printf("ABC: %lf\t%d\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used);
-		//fprintf(abc, "%lf\t%d\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used);
+		//printf("ABC: %lf\t%d\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used);
+		fprintf(abc, "%lf\t%d\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used);
 		
 		start = clock();
 		OPSO(funkcija, br_iter, n, dim, f_best, greska, border_l, border_h, &tren_iter_opso, &g_best_opso, omega, ro_p, ro_g, e);
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-		printf("OPSO: %lf\t%d\t%lf\n", g_best_opso, tren_iter_opso, cpu_time_used);
-		//fprintf(pso, "%lf\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
+	      //printf("OPSO: %lf\t%d\t%lf\n", g_best_opso, tren_iter_opso, cpu_time_used);
+		fprintf(opso, "%lf\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
 		
 		//change MT seed
 		end_time = time(NULL);

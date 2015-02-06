@@ -4,7 +4,7 @@ Pokrenut skriptu comp.sh
 
 Iz php-a pozvat izvrsni file program koji nastane kompajliranjem
 Pozivanje izvrsne datoteke (svi argumenti osim prvog su brojevi (ne nuzno prirodni):
-     program br_fje br_iteracija br_ponavljanja n omega ro_p ro_g m e
+     ./program br_fje br_iteracija br_ponavljanja n omega ro_p ro_g m e
 
 
 FAQ:
