@@ -5,10 +5,10 @@ Marko:
 
 Vanja:
 - spajanje sa c-ovskim dijelom - pozivanje C-a iz forme
-- crtanje grafa iz podataka
++ crtanje grafa iz podataka
 - meni tabove srediti
 - prijevod na hrvatski sa engleskog
-- istestirat grafove
++ istestirat grafove
 - napisat dio prezentacije o grafickom sucelju
 
 
