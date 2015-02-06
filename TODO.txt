@@ -4,10 +4,13 @@ Marko:
 - provjerit imam li sve rezultate testiranja i ponovo testirat ako sta treba (preko vikenda obavim jos jedno testiranje di mi fale rezultati)
 
 Vanja:
-- spojit stranicu i kod
+- spajanje sa c-ovskim dijelom - pozivanje C-a iz forme
+- crtanje grafa iz podataka
+- meni tabove srediti
+- prijevod na hrvatski sa engleskog
 - istestirat grafove
 - napisat dio prezentacije o grafickom sucelju
 
 
 Za dogovorit se:
-- ocemo li na novo crtat slike?
+- ocemo li na novo crtat slike? - Ja nisam za, ima dosta posla a stvarno nitko nece obracati paznju, niti ce grafovi drugacije izgledati, samo su "pomaknuti"
