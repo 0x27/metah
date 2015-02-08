@@ -20,6 +20,25 @@ function num_repeating ($file)
 	
 	
 //fja za izvlacenje odredjenog elementa reda
+function array_element4 ($file, $num_element)
+	{
+	$filecontents = file_get_contents("KOD/results/".$file, "r");
+	$array = preg_split('/[\s]+/', $filecontents, -1, PREG_SPLIT_NO_EMPTY);
+	
+	$array_new="";
+	for ($i=($num_element-1); $i<sizeof($array); $i=$i+3)
+		{
+		$array_new = $array_new.$array[$i];
+			//provjeravamo da li se radi o zadnjem broju u nizu, jer ako da, onda ne stavljamo zarez na kraj
+			if ($i!=(sizeof($array)-(4-$num_element)))
+				$array_new = $array_new.", ";
+		}
+		
+	return $array_new;
+	}
+
+	
+//fja za izvlacenje odredjenog elementa reda
 function array_element ($file, $num_element)
 	{
 	$filecontents = file_get_contents("KOD/results/".$file, "r");
