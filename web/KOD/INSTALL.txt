@@ -1,0 +1,18 @@
+Struktura foldera KOD se treba zadrzati.
+Postavit skriptu comp.sh na +x
+Pokrenut skriptu comp.sh
+
+Iz php-a pozvat izvrsni file program koji nastane kompajliranjem
+Pozivanje izvrsne datoteke (svi argumenti osim prvog su brojevi (ne nuzno prirodni):
+     ./program br_fje br_iteracija br_ponavljanja n omega ro_p ro_g m e
+
+
+FAQ:
+Q: Ne izvrsava se program nakon slanja parametara putem php funkcije?
+A: Provjerit i postavit odgovarajuca prava na program file (755)
+
+Q: JavaScript nemoze povuci podatke iz file-ova di su rezultati?
+A: Postavit odgovarajuca prava na folder results i file-ove koji se nalaze unutra
+
+Q: Sve se raspalo
+A: Jbg

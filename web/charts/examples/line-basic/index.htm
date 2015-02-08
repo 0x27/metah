@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            title: {
+                text: 'Vrijeme potrebno za izračun faktorijela u ovisnosti o broju dretvi',
+                x: -20 //center
+            },
+            subtitle: {
+                x: -20
+            },
+            xAxis: {
+                categories: ['1000', '10000', '20000', '30000', '50000', '70000',
+                    '80000', '100000', '150000', '200000', '300000']
+            },
+            yAxis: {
+                title: {
+                    text: 'Vrijeme (milisekunde)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: '°C'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: 'Jedna dretva',
+                data: [10.0, 321.0, 1333.0, 2282.0, 9260.0, 18178.0, 25982.2, 42235.0, 99683.0, 180350.0, 423381.0]
+            }, {
+                name: 'Dvije dretve',
+                data: [18.0, 419.0, 619.0, 1546.0, 4052.0, 7811.0, 10945.0, 16933.0, 40436.0, 77036.1, 185678.0]
+            }]
+        });
+    });
+    
+
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

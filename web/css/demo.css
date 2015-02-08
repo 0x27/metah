@@ -1,0 +1,168 @@
+@font-face {
+    font-family: NexaLight;
+    src: url(../font/NexaLight.otf);
+}
+
+
+body {
+  color: #333;
+  font-size: 11px;
+  height: auto;
+  font-family: NexaLight;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+
+  font-weight: normal;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+p {
+  border: 1px solid #666;
+  overflow: hidden;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container_12,
+.container_16,
+.container_24 {
+  background-color: #fff;
+  background-repeat: repeat-y;
+}
+
+
+
+.marginTop50
+	{
+	margin-top: 50px;
+	}
+	
+.meniLine
+	{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px;
+	overflow: hidden;
+	}
+	
+.firstForm
+	{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	height: auto;
+	font-size: 18px;
+	text-align: center;
+	}
+	
+	
+.secondForm
+	{
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	border-top: solid 1px;
+	font-size: 18px;
+	text-align: center;
+	}
+	
+.formInput
+	{
+	width: 100%;
+	height: 430px;
+	border: solid 1px;
+	}
+	
+.marginTop30
+	{
+	margin-top: 30px;
+	}
+	
+.current
+	{
+	background: black;
+	color: white;
+	}
+	
+.meniTab:hover
+	{
+	background: black;
+	color: white;
+	}
+
+input[type="text"] 
+	{
+    width: 150px;
+    height: 20px;
+    margin: 3px;
+    background-color: white;
+    border: solid 1px;
+	}
+	
+.description
+	{
+	border: solid 1px;
+	margin-top: 20px;
+	font-size: 18px;
+	overflow: hidden;
+	}
+	
+.paddingDescription
+	{
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+	
+.half
+	{
+	margin-left: 4%;
+	width: 45%;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	float: left;
+	text-align: left;
+	}
+	
+input[type="submit"]
+	{
+	width: 100px;
+	height: 30px;
+	color: white;
+	background-color: black;
+	text-align: center;
+	border: none;	
+	}
+	
+input[type="submit"]:hover
+	{
+	width: 100px;
+	height: 30px;
+	color: black;
+	background-color: white;
+	text-align: center;
+	border: solid 1px;	
+	cursor: pointer;
+	}
