@@ -22,7 +22,6 @@ int main(int argc, char* argv[])
 	double ro_g = atof(argv[7]);
 	int m = atoi(argv[8]);
 	int e = atoi(argv[9]);
-	
 	//variables for function
 	int dim;
 	double f_best, greska, border_l, border_h;
@@ -32,7 +31,6 @@ int main(int argc, char* argv[])
 	double g_best_pso, g_best_abc, g_best_opso;
 	double cpu_time_used;
 	FILE *pso, *abc, *opso;
-	
 	//help variables	
 	int i;
 	clock_t start, end, start_time, end_time;
@@ -54,22 +52,22 @@ int main(int argc, char* argv[])
 		PSO(funkcija, br_iter, n, dim, f_best, greska, border_l, border_h, &tren_iter_pso, &g_best_pso, omega, ro_p, ro_g);
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-		//printf("PSO: %12.10f\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
-		fprintf(pso, "%lf\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
+		//printf("PSO: %12.10f\t%d\t%lf\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
+		fprintf(pso, "%lf\t%d\t%lf\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used, f_best);
 		
 		start = clock();
 		ABC(funkcija, br_iter, n, dim, f_best, greska, border_l, border_h, &tren_iter_abc, &g_best_abc, m, e);
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 		//printf("ABC: %lf\t%d\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used);
-		fprintf(abc, "%lf\t%d\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used);
+		fprintf(abc, "%lf\t%d\t%lf\t%lf\n", g_best_abc, tren_iter_abc, cpu_time_used, f_best);
 		
 		start = clock();
 		OPSO(funkcija, br_iter, n, dim, f_best, greska, border_l, border_h, &tren_iter_opso, &g_best_opso, omega, ro_p, ro_g, e);
 		end = clock();
 		cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 	      //printf("OPSO: %lf\t%d\t%lf\n", g_best_opso, tren_iter_opso, cpu_time_used);
-		fprintf(opso, "%lf\t%d\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used);
+		fprintf(opso, "%lf\t%d\t%lf\t%lf\n", g_best_pso, tren_iter_pso, cpu_time_used, f_best);
 		
 		//change MT seed
 		end_time = time(NULL);
@@ -80,7 +78,7 @@ int main(int argc, char* argv[])
 	fclose(pso);
 	fclose(abc);
 	fclose(opso);
-	
+	printf("1"); //da shell_exec zna da je gotovo
 	return 0;
 } 
 
