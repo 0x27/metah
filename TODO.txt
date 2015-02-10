@@ -1,16 +1,14 @@
 Marko:
-- grafovi i tablice (jedna tablica gotova, najvj i jedina) u prezentaciji (dodat zakljucak?)
-- napravit jos jedan server (to ce bit par dana prije prezentacije) i sve dignut na njega, istestirat da li sve radi
-- provjerit imam li sve rezultate testiranja i ponovo testirat ako sta treba (preko vikenda obavim jos jedno testiranje di mi fale rezultati)
++ grafovi i tablice (jedna tablica gotova, najvj i jedina) u prezentaciji (rijeseno)
+- zakljucak
+-/+ napravit jos jedan server (to ce bit par dana prije prezentacije) i sve dignut na njega, istestirat da li sve radi (rijeseno do na novi front end)
+- provjerit imam li sve rezultate testiranja i ponovo testirat ako sta treba (preko vikenda obavim jos jedno testiranje di mi fale rezultati) - bit ce kad budu radili kompovi na faxu
 
 Vanja:
-- spajanje sa c-ovskim dijelom - pozivanje C-a iz forme
-+ crtanje grafa iz podataka
-- meni tabove srediti
-- prijevod na hrvatski sa engleskog
-+ istestirat grafove
-- napisat dio prezentacije o grafickom sucelju
++ spajanje sa c-ovskim dijelom - pozivanje C-a iz forme (rijesili smo, radi)
+- crtanje grafa iz podataka (treba pazit da se sklaira, podaci lete na sve strane, pogle prezentaciju i grafove o testiranju)
+- meni tabove srediti (mozda ih i maknut da ne zajebavaju, znam da je pain in the ass)
+- prijevod na hrvatski sa engleskog (probat cu to sto prije obavit, skroz sam zaboravio na to)
++ istestirat grafove (radi, ali pogledat tocku 2)
+- napisat dio prezentacije o grafickom sucelju (napisao ja, ti mozes prepravit)
 
-
-Za dogovorit se:
-- ocemo li na novo crtat slike? - Ja nisam za, ima dosta posla a stvarno nitko nece obracati paznju, niti ce grafovi drugacije izgledati, samo su "pomaknuti"
