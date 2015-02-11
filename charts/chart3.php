@@ -2,9 +2,9 @@
 	
 		$num_repeating = num_repeating ("abc.txt");
 		
-		$abc_min = array_element ("abc.txt", 1);
-		$pso_min = array_element ("pso.txt", 1);
-		$opso_min = array_element ("opso.txt", 1);
+		$abc_opt = array_element ("abc.txt", 4);
+		$pso_opt = array_element ("pso.txt", 4);
+		$opso_opt = array_element ("opso.txt", 4);
 		
 		print "
 
@@ -35,7 +35,7 @@ $(function () {
                 }]
             },
             tooltip: {
-                valueSuffix: '°C'
+                valueSuffix: ''
             },
             legend: {
                 layout: 'vertical',
@@ -45,13 +45,13 @@ $(function () {
             },
             series: [{
                 name: 'ABC',
-                data: [".$abc_min."]
+                data: [".$abc_opt."]
             }, {
                 name: 'PSO',
-                data: [".$pso_min."]
+                data: [".$pso_opt."]
             },  {
                 name: 'OPSO',
-                data: [".$opso_min."]
+                data: [".$opso_opt."]
             }]
         });
     });
@@ -62,3 +62,10 @@ $(function () {
 	?>
 
 <div id="container3" style="min-width: 310px; height: 400px; margin-bottom: 30px;"></div>
+
+
+<?php
+
+echo ($abc_opt."<br />".$pso_opt."<br />".$opso_opt);
+
+ ?>

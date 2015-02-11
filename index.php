@@ -79,10 +79,10 @@ function changeImage()
 		</div>
 		<div class="grid_2 meniTab">
 			<p>
-      			Meni tab 2
+      			Rezultati
 	      	</p>
 		</div>
-		<div class="grid_2 meniTab">
+		<!-- <div class="grid_2 meniTab">
 			<p>
       			Meni tab 3
 	      	</p>
@@ -101,7 +101,7 @@ function changeImage()
 			<p>
       			Meni tab 6
 	      	</p>
-		</div>
+		</div> -->
 	</div>
 	
 	<div class="grid_7">
