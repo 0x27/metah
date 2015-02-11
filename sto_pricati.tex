@@ -1,6 +1,44 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 
+\def\rmdj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.315em}\kern 0.04em}}
+\def\sldj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.265em}}\rlap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.05em}}}
+\def\itdj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.2em}}\rlap{\raise 1.22ex\hbox
+  {\vrule height 0.09ex width 0.06em}}}
+\def\bfdj {d\llap{\raise 1.16ex\hbox
+  {\vrule height 0.126ex width 0.308em}\kern 0.04em}}
+\def\ttdj {\rlap{\kern 0.17em\raise 1.1ex\hbox
+  {\vrule height 0.09ex width 0.295em}}d}
+\def\scdj {\rlap{\kern 0.04em\raise 0.57ex\hbox
+  {\vrule height 0.09ex width 0.20em}}d}
+\def\sfdj {d\llap{\raise 1.22ex\hbox
+  {\vrule height 0.10ex width 0.3em}\kern 0.02em}}
+
+\def\dj{\ifcase\fam \rmdj \or \or \or
+  \or \itdj \or \sldj \or \bfdj \or \ttdj \or \sfdj \or \scdj \else \rmdj \fi}
+
+\def\rmDj {\rlap{\kern 0.05em\raise 0.76ex\hbox
+  {\vrule height 0.10ex width 0.28em}}D}
+\def\slDj {\rlap{\kern 0.1em\raise 0.76ex\hbox
+  {\vrule height 0.1ex width 0.28em}}D}
+\def\itDj {\rlap{\kern 0.145em\raise 0.76ex\hbox
+  {\vrule height 0.1ex width 0.274em}}D}
+\def\bfDj {\rlap{\kern 0.044em\raise 0.72ex\hbox
+  {\vrule height 0.126ex width 0.287em}}D}
+\def\ttDj {\rlap{\kern 0.02em\raise 0.67ex\hbox
+  {\vrule height 0.105ex width 0.20em}}D}
+\def\scDj {\rlap{\kern 0.08em\raise 0.73ex\hbox
+  {\vrule height 0.12ex width 0.24em}}D}
+\def\sfDj {\rlap{\kern 0.02em\raise 0.727ex\hbox
+  {\vrule height 0.126ex width 0.26em}}D}
+
+\def\Dj{\ifcase\fam \rmDj \or \or \or
+  \or \itDj \or \slDj \or \bfDj \or \ttDj \or \sfDj \or \scDj \else \rmDj \fi}
+
 %opening
 \title{}
 \author{}
@@ -53,7 +91,7 @@ Ovaj \v clanak je ustvari bio i motivacija za ovaj projekt, i vidimo da je nedav
 
 \section{slajd}
 No, \v sto je zaista bio na\v s projektni zadatak?\\
-Mi smo odabrali 2 algoritma koja se baziraju na roju \v cestivca, PSO i ABC o kojima \v cemo malo kasnije, te smo osmisli novi algoritam koji je mini hibrid ta dva.\\
+Mi smo odabrali 2 algoritma koja se baziraju na roju \v cestica, PSO i ABC o kojima \v cemo malo kasnije, te smo osmisli novi algoritam koji je mini hibrid ta dva.\\
 Za prikaz rezultata na\v seg projekta i interakciju s korisnikom osmislili smo i izradili grafi\v cko web su\v celje.
 
 \section{slajd}
@@ -78,5 +116,45 @@ Ovo je algoritam koji smo mi osmislili. Baziran je na PSO, ali smo mu dodali lok
 \emph{pro\v citaj slajd, ma\v si rukama dok obja\v snjavas, crtaj malo po plo\v ci, skrenut pa\v znju na *}
 
 \section{slajd}
+Na\v s kod je pisan u programskom jeziku c te je testiran na ra\v cunalim sa 4 jezgrenima g4-bitnim ***GHz procesorima, 8Gb RAM memorije te operacijskim sustavom Linux Mint. Kao  generator pseudo slu\v cajnih brojeva samo koristili Mersenne Twister kojem smo kao 'sjeme' dali trenutno procesorsko vrijeme.\\
+Po\v sto se procesorsko vrijeme mjeri u sekundama, a neki izra\v cuni traju manje od toga, prije ponovnog pokretanja algoritma \v cekamo jedmo sekundu kako bi sigurno dobili druk\v cije pseudo slu\v cajne brojeve i time osigurali da su nam reuzltati stvarno ovisni o slu\v cajnim brojevima.
+
+\section{slajd}
+Testiranje smo izvr\v savali u 3 faze i tre\' ca faza je bila ona koja je dala kona\v cne rezultate.\\
+Kao \v sto smo vidjeli, algoritmi koje smo odabrali sadr\v ze jako veliki broj parametara, stoga su prve dvije faze testiranja bile nu\v zne kako bi odradili neke fiksne parametre s kojima bi mogli provesti testiranje.\\
+Prva faza testiranja nam je pokazala da su ovi \emph{(pokzat na prvu to\v cku} paramteri oni na kojima se vidi lijep prijelaz u vremenskoj slo\v zenosti.\\
+Druga faza, i njene podfaze, testiranja su za rezultat dale rezultat da na sljedecim parametrima posti\v zemo najbolje vrijednosti. ABC-u smo dali malu prednost s brojem \v cestica koje sudjeluju u lokalnim pretragama, tj. njihovim 'velikim' brojem. Kao \v sto vidimo, radijus lokalne pretrage u ABC je varijabilan, tj. kada se prona\dj e bolje rje\v senje od trenutnog smanjujemo jo\v s vi\v se prostor te pretrage u nadi da \' cemo prona\' ci jo\v s bolje.\\
+\emph{crtat na plo\v cu kako smo dali prednost.\\ Ukratko opisat \v sto je koja varijabla koja je navedena}
+
+\section{slajd}
+U testiranju smo koristili 10 testnih funkcija, a sada \' cemo predstaviti smao nekoliko njih koje daju osnovnu predod\v zbu o tome na kakvim smo funkcijama testirali.\\
+Prva i najjednostavnija funkcija je ova, sfera koja ima samo jedan lokalni, ujedno i globalni minimum.
+
+\section{slajd}
+Sljede\' ca funkcija je step funkcija. Problem koji se ovdje javlja je taj da imamo 'velike' dijelove di je funcija konstantna pa umjesto da napredujemo prema minimumu mo\v zemo zaglaviti na tim 'ravnim' djelovima.
+
+\section{slajd}
+Schafferova F6 funkcija. Problem predstavlja njezina 'gusta valovitost' i to \v sto su lokalni ekstremi tih valova relativno blizu pa mo\v zemo u pretrazi lako presko\v cit optimum.
+
+\section{slajd}
+'Najgora' funkcija na kojoj smo testirali. Objedinjuje sve karakteristike koje imaju ostale funkcije nad kojima smo testirali.\\ \emph{Nacrtat presjek na plo\v cu}\\ Ima jako puno lokalnih minimuma ali optimum se nalazi na dnu jednog uskog lijevka koji je tako\dj er jako 'nazubljen' od lokalnih minimuma.
+
+\section{slajd}
+Malo o dobivenim rezultatima. Po\v sto je bilo jako puno testiranja i rezultata prikazat \' cemo samo rezultate dobivene na maloprije opisanim funkcijama. Ovo je pregled broja iteracija potrebnih za pronalazak optimuma na danu to\v const ($10^{-3}$ do $10^{-6}$, ovisno o algoritmu). U svakoj \' celiji tablice su redom prikazani rezultati pri testiranju za $n=50,100,150,200$. Zelenom bojom smo ozna\' cili najbolji rezultat koji smo dobili za svaki od testiranih broja \v cestica. Za ABC i Ackley funkciju nemamo podatke jer je izra\v cun trajao predugo i nismo imali mogu\' cnost to do kraja ispitati taj slu\v caj, tj. pristup ra\v cunalima na kojima smo testirali je bio ograni\v cen na rad i potrebu ra\v cunala u praktikumu 5.
+
+\section{slajd}
+Ovdje vidimo grafi\v cki prikaz gore opisanih rezultata za Step funkciju i 100 \v cestica kori\v stenih prilikom testiranja. Primjetimo kako je OPSO najstabilniji \v sto se ti\v ce broja potrebnih iteracija, dok je ABC jako ovisan o svojoj stohasti\v ckoj naravi.
+
+\section{slajd}
+Evo i jedan grafi\v cki prikaz vremena izvr\v savanja algoritama nad Schafferovom F6 funkcijom i 50 \v cestica. Primjetimo da vrijeme izvr\v savanja izgleda zaista slu\v cajno, a razlog tomu je stohasti\v cka narav algoritama, tj. prvi raspored \v cestica po prostoru pretra\v zivanja.
+
+\section{slajd}
+\emph{ukratko o svakoj to\v cki, ne ih \v citat cijele to nema smisla}
+
+\section{slajd}
+Grafi\v cko su\v celje koje smo osmisli i izradili bazirano je na web tehnologijama, Php i JavaScript.
+\section{slajd}
+Korisniku pru\v za mogu\' cnost unosa ve\' cine paramtera koji su potrebi za izvr\v savanje algoritama; odabir funkcije nad kojom se testira, broj iteracija, broj ponavljanja i za algoritme specifi\v cne parametre.\\
+Rezultati testiranja prikazuju se grafi\v cki u obliku grafova te kao textualni rezultati.
 
 \end{document}

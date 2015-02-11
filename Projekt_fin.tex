@@ -298,8 +298,8 @@
  \begin{itemize}
   \item Broj \v cestica $n$=50, 100, 150, 200 za svaki algoritam
   \item ABC: $m=\lfloor\frac{n}{2}\rfloor, e=\lfloor\frac{m}{2}\rfloor, ne=10, nm=5, \epsilon$ varijabilni
-  \item PSO: $\omega=0.9, \rho_p=1, \rho_g=0.9$
-  \item OPSO: $\omega=0.9, \rho_p=1, \rho_g=0.9 \epsilon=1$
+  \item PSO: $\omega=0.7, \rho_p=1, \rho_g=0.9$
+  \item OPSO: $\omega=0.7, \rho_p=1, \rho_g=0.9 \epsilon=1$
   
  \end{itemize}
 }
@@ -363,7 +363,7 @@ $$f(x)=0.5+\frac{sin^2(\sqrt{x_1^2 + x_2^2})-0.5}{[1+0.001 \cdot (x_1^2 + x_2^2)
   \begin{center}
   \begin{tabular}{c|c|c|c|c}
         & Sfera & Step & Schaffer F6 &  Ackley\\ \hline
-   \multirow{4}{*}{ABC} & 38.03 & 475.53 & \color{green}{2} & N/A\\  
+   \multirow{4}{*}{ABC} & 38.03 & 475.53 & \color{green}{2} & N/A\footnote{Vrijeme izvr\v savanja je bilo predugo, nismo mogli na\' ci ra\v cunala koja mo\v zemo toliko zauzeti izra\v cunima} \\  
    	& 224.60 & 355.93 & \color{green}{1.93} & N/A\\
    	& 447.23 & 273.33 & \color{green}{2.70} & N/A\\
    	& 630 & 323.20 & \color{green}{2.57} & N/A\\ \hline
@@ -401,8 +401,8 @@ $$f(x)=0.5+\frac{sin^2(\sqrt{x_1^2 + x_2^2})-0.5}{[1+0.001 \cdot (x_1^2 + x_2^2)
  \begin{itemize}
   \item PSO i ABC su pokazali svoju 'narav' (ne)konvergentnosti.
   \item OPSO je uz pomo\' c svoje lokalne pretrage pokazao da je superjorniji od standarnih ABC i PSO po broju potrebnih iteracija za pronalazak optimalnog rje\v senja.
-  \item Heuristi\v cka karakteristika se algoritama se o\v citovala u rezultatima, te je stoga potrebno daljnje istra\v zivanje kako bi se pokazalo koji je od predstavljenih algoritama zapravo 'najbolji'.
-  \item Velika vremenska \v slozenost se vidi u rezultatima svih algoritama, pogotovo na ispitivanju jako slo\v zenih funkcija.
+  \item Stohasti\v cka karakteristika se algoritama se o\v citovala u rezultatima, te je stoga potrebno daljnje istra\v zivanje kako bi se pokazalo koji je od predstavljenih algoritama zapravo 'najbolji'.
+  \item Velika vremenska \v slozenost se vidi u rezultatima svih algoritama, pogotovo na ispitivanju jako slo\v zenih funkcija (npr. Ackley).
   \item Konvergencija algoritama poma\v ze u smanjenju vremenske slo\v zenosti.
  \end{itemize}
 }
@@ -411,7 +411,7 @@ $$f(x)=0.5+\frac{sin^2(\sqrt{x_1^2 + x_2^2})-0.5}{[1+0.001 \cdot (x_1^2 + x_2^2)
 \frame{
   \frametitle{Tehnologije}
   \begin{itemize}
-   \item Php i Javascript skriptni jezici
+   \item Php i JavaScript skriptni jezici
    \item Php funkcija \emph{exec()} za poziv programa sa danim parametrima
    \item JavaScript funkcije za iscrtavanje grafova dobivenih rezultata
    \item Dva glavna dijela:
