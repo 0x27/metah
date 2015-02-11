@@ -290,8 +290,6 @@
    \item Linux operacijski sustav (2.6 kernel)
    \item Programski jezik C (kod prilagoden za 64-bitni sustav)
    \item Mersenne Twister generator pseudo-slu\v cajnih brojeva (procesorsko vrijeme se koristi kao 'sjeme' za genereiranje)
-   \item Apache2 server
-   \item web tehnologije: Php i JavaScript
   \end{itemize}
 }
 
@@ -381,6 +379,7 @@ $$f(x)=0.5+\frac{sin^2(\sqrt{x_1^2 + x_2^2})-0.5}{[1+0.001 \cdot (x_1^2 + x_2^2)
   \end{center}
 }
 
+
 \frame{
   \frametitle{Grafi\v cki prikaz prikaz - 1}
   \begin{center}
@@ -397,7 +396,16 @@ $$f(x)=0.5+\frac{sin^2(\sqrt{x_1^2 + x_2^2})-0.5}{[1+0.001 \cdot (x_1^2 + x_2^2)
   
 }
 
-
+\frame{
+ \frametitle{Zaklju\v cak nakon testiranja}
+ \begin{itemize}
+  \item PSO i ABC su pokazali svoju 'narav' (ne)konvergentnosti.
+  \item OPSO je uz pomo\' c svoje lokalne pretrage pokazao da je superjorniji od standarnih ABC i PSO po broju potrebnih iteracija za pronalazak optimalnog rje\v senja.
+  \item Heuristi\v cka karakteristika se algoritama se o\v citovala u rezultatima, te je stoga potrebno daljnje istra\v zivanje kako bi se pokazalo koji je od predstavljenih algoritama zapravo 'najbolji'.
+  \item Velika vremenska \v slozenost se vidi u rezultatima svih algoritama, pogotovo na ispitivanju jako slo\v zenih funkcija.
+  \item Konvergencija algoritama poma\v ze u smanjenju vremenske slo\v zenosti.
+ \end{itemize}
+}
 
 \section{Grafi\v cko su\v celje}
 \frame{
