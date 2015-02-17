@@ -16,52 +16,52 @@ function changeImage()
 	if (x==1)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija1.png\">";
-	    document.getElementById("functionDescription").innerHTML = "Prva funkcija je konveksna i glatka te se smatra jednostavnim zadatkom za evolucijske i heuristicke algoritme. Funkcija ima globalni minimum u f(0)=0 and let the desired value be 1.e - 3.";
+	    document.getElementById("functionDescription").innerHTML = "Funkcija je konveksna i glatka te se smatra jednostavnim zadatkom za evolucijske i heuristicke algoritme. Funkcija ima globalni minimum u f(0)=0 i tražena točnost je 1.e - 3.";
 	    }
 	else if (x==2)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija2.png\">";
-	    document.getElementById("functionDescription").innerHTML = "Rosenbrockova dolina ili, kako je neki zovu, Banana funkcija ima dvije varijable ali je uvijek smatrana teškim minimizacijskim problemom. Njezin globalni minimum je f(1)=0 i leži u ravnoj, uskoj paraboličnoj dolini. The desired value is considered equal to 1.e - 3 and D = 30.";
+	    document.getElementById("functionDescription").innerHTML = "Rosenbrockova dolina ili, kako je neki zovu, Banana funkcija ima dvije varijable ali je uvijek smatrana teškim minimizacijskim problemom. Njezin globalni minimum je f(1)=0 i leži u ravnoj, uskoj paraboličnoj dolini. Tražena točnost je 1.e - 3 i D = 30.";
 	    }
 	else if (x==3)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija3.png\">";
-		document.getElementById("functionDescription").innerHTML = "Ova funkcija je primjer problema ravne površine. Ovaj tip problema pretraživanja prostora nam ne daje ikakvu informaciju o smjeru u kojem bi se trebali kretati. Stoga, večina konvencionalnih matematičkih metoda kao Newtonova metoda suočavaju se s velikim preprekama u ovakvim slučajevima. Stohastičke metode se ne suočavaju s puno problema u ovom slučaju jer one ne razmatraju matematičko ponašanje površine. The waveform  ove funkcije prikazane na slici iznad, the desired value is set to 1.e - 3 and D = 5.";
+		document.getElementById("functionDescription").innerHTML = "Ova funkcija je primjer problema ravne površine. Ovaj tip problema pretraživanja prostora nam ne daje ikakvu informaciju o smjeru u kojem bi se trebali kretati. Stoga, večina konvencionalnih matematičkih metoda kao Newtonova metoda suočavaju se s velikim preprekama u ovakvim slučajevima. Stohastičke metode se ne suočavaju s puno problema u ovom slučaju jer one ne razmatraju matematičko ponašanje površine. The waveform  ove funkcije prikazane na slici iznad, tražena točnost je 1.e - 3 i D = 5.";
 	    }
 	else if (x==4)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija4.png\">";
-		document.getElementById("functionDescription").innerHTML = "Ova funkcija prezentira stanje zvukova. Algoritam nikada ne dobije istu vrijednost za istu točku. Zapravo, ovakav tip testne funkcije razvija mogučnosti algoritma kada the data is noisy. Globalni minimum se pojavljuje u f (-5 - e) = 0 dok e ϵ (0,0.12] and the desired value is considered equal to 1.e - 5. ";
+		document.getElementById("functionDescription").innerHTML = "Ova funkcija prezentira stanje zvukova. Algoritam nikada ne dobije istu vrijednost za istu točku. Zapravo, ovakav tip testne funkcije razvija mogučnosti algoritma kada the data is noisy. Globalni minimum se pojavljuje u f (-5 - e) = 0 dok e ϵ (0,0.12] tražena točnost je to 1.e - 5. ";
 	    }
 	else if (x==5)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija5.png\">";
-		document.getElementById("functionDescription").innerHTML = "Having several sharp local optimum points makes this function a difficult task for finding the global optimum. Since the neighborhood of each local optimum guides the algorithm to its leading optimum point, most of the algorithms stuck in the first local optimum point that they reach. The local optimum occurs in f(-32, -32) ≈ 0.998 and the desired value is taken equal to 0.998.";
+		document.getElementById("functionDescription").innerHTML = "Nekoliko oštrih lokalnih optimuma čini teškim pronalazak globalnog optimumu. Pošto svaka okolina lokalnih optimuma konvergira u dani lokalni optimum, većina algoritama 'zaglavi' u tom lokalnom optimumu. Globalni optimum se postiže u f(-32, -32) ≈ 0.998 tražena točnost je 0.998.";
 	    }
 	else if (x==6)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija6.png\">";
-		document.getElementById("functionDescription").innerHTML = "Ova funkcija se uvijek smatrala pametnim evaluator za ponašanje optimizatora posebno za stohastičke i heurističke algoritme kao što je Differential Evolution and Particle Swarm Optimization. Ova valovita funkcija ia globalni minimum u f(0) = 0. The desired value is set to 1.e - 6.";
+		document.getElementById("functionDescription").innerHTML = "Ova funkcija se uvijek smatrala pametnim evaluator za ponašanje optimizatora posebno za stohastičke i heurističke algoritme kao što je Differential Evolution and Particle Swarm Optimization. Ova valovita funkcija ia globalni minimum u f(0) = 0. Tražena točnost je 1.e - 6.";
 	    }
 	else if (x==7)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija7.png\">";
-		document.getElementById("functionDescription").innerHTML = "Ova funkcija challenges optimizacijske algoritme po njihovoj dimenzionalnosti, na prvu, a onda po pripadajućoj trigonometisjkoj funkcji. Slika prikazuje 3D graf ove funkcije. Except two dimensions, the other variables are set to their optimum value which is zero. The global minimum for this function is in f(0) = 0 and the desired value is set to 10^(-4) and the D = 10.";
+		document.getElementById("functionDescription").innerHTML = "Ova funkcija ispituje optimizacijske algoritme po njihovoj dimenzionalnosti, na prvu, a onda po pripadajućoj trigonometisjkoj funkcji. Globalni minimum se postiže u  f(0) = 0 i tražena točnost je 10^(-4) i D = 10.";
 	    }
 	else if (x==8)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija8.png\">";
-		document.getElementById("functionDescription").innerHTML = "Ovu funkciju je predstavio Griewank u 1981 kako bi bila korištena kao testna funkcija za optimizacijske algoritme. Teško je pronaći globalni optimum u f(0) = 0, kada postoji više lokalnih optimuma. Let the desired value be 1.e - 3.";
+		document.getElementById("functionDescription").innerHTML = "Ovu funkciju je predstavio Griewank u 1981 kako bi bila korištena kao testna funkcija za optimizacijske algoritme. Teško je pronaći globalni optimum u f(0) = 0, kada postoji više lokalnih optimuma. Tražena točnost je 1.e - 3.";
 	    }
 	else if (x==9)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija9.png\">";
-		document.getElementById("functionDescription").innerHTML = "Dimenzionalnost je važan izazov ove funkcije kao i Rastriginove funkcije. Slika prikazuje 3D graf while {X3, X4, ... , X10} are kept equal to their optimum value which means zero. The global optima is in f(0) = 0, the desired value is 1.e - 3 and D = 30.";
+		document.getElementById("functionDescription").innerHTML = "Dimenzionalnost je važan izazov ove funkcije kao i Rastriginove funkcije. Globalni optimum je f(0) = 0, tražena točnost je is 1.e - 3 i D = 30.";
 	    }
 	else if (x==10)
 		{
 	    document.getElementById("divImage").innerHTML = "<img src=\"images/funkcija10.png\">";
-		document.getElementById("functionDescription").innerHTML = "Kada je Ackley predstvaio funkciju prvi put, ona je bila dvodimenzionalni optimizacijski problem. Poslije 10 godina, Beak proširuje funkciju na n-dimenzionalni problem. The desired value is considered 1.e - 3 and the D = 30. Picture above shows a 3D graph for this function.";
+		document.getElementById("functionDescription").innerHTML = "Kada je Ackley predstvaio funkciju prvi put, ona je bila dvodimenzionalni optimizacijski problem. Poslije 10 godina, Beak proširuje funkciju na n-dimenzionalni problem. Tražena točnost je 1.e - 3 i D = 30.";
 	    }
 
 	}
@@ -189,8 +189,7 @@ function changeImage()
 	</form>
 	<div class="grid_12 description">
 		<div class="paddingDescription" id="functionDescription">
-			The first function is a convex and smooth one that is always considered a simple task to evolutionary and heuristic algorithms. 
-			This function has a global minimum at f(0)=0 and let the desired value be 1.e - 3.
+			Funkcija je konveksna i glatka te se smatra jednostavnim zadatkom za evolucijske i heuristicke algoritme. Funkcija ima globalni minimum u f(0)=0 i tražena točnost je 1.e - 3.
 		</div>
 	</div>
 
