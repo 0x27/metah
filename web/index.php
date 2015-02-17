@@ -77,12 +77,21 @@ function changeImage()
       			Naslovnica
 	      	</p>
 		</div>
-		<div class="grid_2 meniTab">
+		<a href="results.php">
+		<div class="grid_2 meniTab current">
 			<p>
-      			Meni tab 2
+      			Download rezultata
 	      	</p>
 		</div>
-		<div class="grid_2 meniTab">
+		</a>
+        <a href="projekt.zip">
+		<div class="grid_2 meniTab current">
+			<p>
+      			Download projekta
+	      	</p>
+		</div>
+		</a>
+		<!-- <div class="grid_2 meniTab">
 			<p>
       			Meni tab 3
 	      	</p>
@@ -101,16 +110,27 @@ function changeImage()
 			<p>
       			Meni tab 6
 	      	</p>
-		</div>
+		</div> -->
 	</div>
 	
+    <?php
+    if (isset($_GET['ob']))
+        if ($_GET['ob']==1)
+            print '
+                <div class="container_12 marginTop50" style="text-align: center; font-size: 20px; margin-bottom: 20px;">
+                    Molimo unesite sve numeričke vrijednosti!
+                </div>
+                ';
+        
+    ?>
+    
 	<div class="grid_7">
     	<p id="divImage">
 			<img src="images/funkcija1.png" />
 		</p>
 	</div>
 	
-	<form action="exe.php" method="POST">
+	<form action="exe.php" method="POST" name="Form" onsubmit="return validateForm()">
 	<div class="grid_5">
 		<div class="formInput">
 			<div class="firstForm">
@@ -132,7 +152,7 @@ function changeImage()
 				</div>
 				
 				<div class="half">Broj iteracija:</div>
-				<div class="half"><input type="text" name="iteracije" placeholder="od 1 do 10 000"/></div>
+				<div class="half"><input type="text" name="iteracije" id="iteracije" placeholder="od 1 do 10 000"/></div>
 
 				<div class="half">Broj ponavljanja:</div>
 				<div class="half"><input type="text" name="ponavljanja" placeholder="od 2 do 100"/></div>
@@ -183,6 +203,8 @@ function changeImage()
   	</div>
     
 </div>
+   
+        
 
 </body>
 </html>
